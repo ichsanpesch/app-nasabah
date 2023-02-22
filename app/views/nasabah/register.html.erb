@@ -1,0 +1,12 @@
+<h1>Mohon mengisi data nasabah</h1>   
+<%= form_with url: "/register", method: :post do |form| %>
+
+  <%= form.label :p_email, "Email" %>
+  <%= form.text_field :p_email %>
+
+  <%= form.label :p_password, "Password" %>
+  <%= form.text_field :p_password %>
+
+  <%= form.submit "Register" %>
+
+<% end %>
